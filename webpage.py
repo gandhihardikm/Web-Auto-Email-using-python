@@ -9,7 +9,7 @@ from email.mime.text import MIMEText
 
 # me == my email address
 # you == recipient's email address
-me = "hardik.gandhi@sjsu.edu"
+me = "Receiver's email address "
 
 # Create message container - the correct MIME type is multipart/alternative.
 msg = MIMEMultipart('alternative')
@@ -39,7 +39,7 @@ mail.ehlo()
 
 mail.starttls()
 
-mail.login('hardik.gandhi@sjsu.edu', 'Manoj@64')
+mail.login('Your email address', 'Your Email password')
 mail.sendmail(me, pankaj, msg.as_string())
 
 mail.quit()
